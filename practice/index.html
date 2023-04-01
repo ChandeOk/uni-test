@@ -1,0 +1,136 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="form-container">
+      <div class="form">
+        <h1 class="form-header">Стать партнером проекта</h1>
+        <form action="submit">
+          <div class="form-input-top-container">
+            <div class="form-input-top-left-container">
+              <div class="form-input-container">
+                <label for="input-name">
+                  <span style="color: red">✱</span> Название организации
+                </label>
+                <input type="text" name="name" id="input-name" required />
+              </div>
+              <div class="form-input-container">
+                <label for="input-phone">
+                  <span style="color: red">✱</span> Телефон
+                </label>
+                <input type="tel" name="phone" id="input-phone" required />
+              </div>
+              <div class="form-input-container">
+                <label for="input-email">
+                  <span style="color: red">✱</span> E-mail
+                </label>
+                <input type="email" name="email" id="input-email" required />
+              </div>
+            </div>
+            <div class="form-input-container-img">
+              <label for="input-logo"
+                ><span style="color: red">✱</span
+                ><span class="logo-label"> Логотип (jpeg, png) </span>
+                <span class="upload-icon"
+                  ><img src="./assets/upload.png" alt="upload-icon"
+                /></span>
+                <span class="upload-text">Выберите файл</span>
+              </label>
+              <input
+                type="file"
+                name="logo"
+                id="input-logo"
+                accept="image/png, image/jpeg"
+              />
+              <img
+                src="./assets/photo.png"
+                alt="logo-example"
+                class="logo-example"
+              />
+            </div>
+          </div>
+          <div class="form-input-container no-label">
+            <input type="text" name="direction" id="input-direction" required />
+            <label for="input-direction">
+              <img
+                src="./assets/icon-color.png"
+                alt="direction-icon"
+                class="input-icon"
+              />
+            </label>
+          </div>
+          <div class="form-input-container no-label">
+            <input type="text" name="web" id="input-web" />
+            <label for="input-web">
+              <img src="./assets/web.png" alt="web-icon" class="input-icon" />
+            </label>
+          </div>
+          <div class="form-input-container no-label">
+            <input type="text" name="vk" id="input-vk" />
+            <label for="input-vk">
+              <img src="./assets/vk.png" alt="vk-icon" class="input-icon" />
+            </label>
+          </div>
+          <div class="form-input-container no-label">
+            <input type="text" name="ok" id="input-ok" />
+            <label for="input-ok">
+              <img src="./assets/o.png" alt="ok-icon" class="input-icon" />
+              <img src="./assets/k.png" alt="ok-icon" class="input-icon" />
+            </label>
+          </div>
+          <div class="form-input-container no-label">
+            <input type="text" name="facebook" id="input-facebook" />
+            <label for="input-facebook">
+              <img
+                src="./assets/facebook.png"
+                alt="facebook-icon"
+                class="input-icon"
+              />
+            </label>
+          </div>
+          <div class="form-input-container no-label">
+            <input type="text" name="instagram" id="input-instagram" />
+            <label for="input-instagram">
+              <img
+                src="./assets/instagram.png"
+                alt="instagram-icon"
+                class="input-icon"
+              />
+            </label>
+          </div>
+          <div class="form-input-container no-label">
+            <input type="text" name="youtube" id="input-youtube" />
+            <label for="input-youtube">
+              <img
+                src="./assets/youtube.png"
+                alt="youtube-icon"
+                class="input-icon"
+              />
+            </label>
+          </div>
+          <div class="form-input-container">
+            <label for="input-chief">Руководитель </label>
+            <input type="text" name="chief" id="input-chief" />
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
