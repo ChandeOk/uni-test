@@ -13,13 +13,17 @@
       href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap"
       rel="stylesheet"
     />
-
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
-    <script src="index.js"></script>
+    <script defer src="index.js"></script>
     <title>Document</title>
   </head>
   <body>
-    <div class="form-container">
+    <button class="open-form-button">Открыть форму</button>
+    <div class="form-container hide">
       <div class="form">
         <h1 class="form-header">Стать партнером проекта</h1>
         <form action="submit">
@@ -35,7 +39,14 @@
                 <label for="input-phone">
                   <span style="color: red">✱</span> Телефон
                 </label>
-                <input type="tel" name="phone" id="input-phone" required />
+                <input
+                  type="tel"
+                  name="phone"
+                  id="input-phone"
+                  pattern=".{11,}"
+                  maxlength="11"
+                  placeholder="79991234567"
+                />
               </div>
               <div class="form-input-container">
                 <label for="input-email">
@@ -58,6 +69,7 @@
                 name="logo"
                 id="input-logo"
                 accept="image/png, image/jpeg"
+                required
               />
               <img
                 src="./assets/photo.png"
@@ -69,6 +81,7 @@
           <div class="form-input-container no-label">
             <input type="text" name="direction" id="input-direction" required />
             <label for="input-direction">
+              <span style="color: red">✱</span> Направление
               <img
                 src="./assets/icon-color.png"
                 alt="direction-icon"
@@ -129,6 +142,10 @@
             <label for="input-chief">Руководитель </label>
             <input type="text" name="chief" id="input-chief" />
           </div>
+          <button type="submit" class="form-button hide">
+            Стать партнером проекта
+          </button>
+          <button class="form-button-cancel">Отменить</button>
         </form>
       </div>
     </div>
